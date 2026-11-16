@@ -1,0 +1,21 @@
+modelo,metrica,sem_zscore_media,sem_zscore_desvio,com_zscore_media,com_zscore_desvio,delta
+kNN (Euclidiana),Acurácia,0.660000,0.016202,0.755000,0.031623,0.095000
+kNN (Euclidiana),Recall,0.220000,0.039791,0.383333,0.070711,0.163333
+kNN (Euclidiana),Especificidade,0.848571,0.021665,0.914286,0.027664,0.065714
+kNN (Euclidiana),Precisão,0.383290,0.046574,0.658592,0.085781,0.275302
+kNN (Euclidiana),F1-Score,0.278708,0.042204,0.482659,0.074821,0.203951
+kNN (Manhattan),Acurácia,0.659000,0.021622,0.742000,0.019235,0.083000
+kNN (Manhattan),Recall,0.223333,0.072265,0.363333,0.047726,0.140000
+kNN (Manhattan),Especificidade,0.845714,0.028838,0.904286,0.021189,0.058571
+kNN (Manhattan),Precisão,0.378194,0.068356,0.621141,0.053840,0.242948
+kNN (Manhattan),F1-Score,0.278655,0.072541,0.457068,0.046662,0.178413
+Bayesiano (Univariado),Acurácia,0.744000,0.011937,0.744000,0.011937,0.000000
+Bayesiano (Univariado),Recall,0.576667,0.040139,0.576667,0.040139,0.000000
+Bayesiano (Univariado),Especificidade,0.815714,0.033655,0.815714,0.033655,0.000000
+Bayesiano (Univariado),Precisão,0.575448,0.028512,0.575448,0.028512,0.000000
+Bayesiano (Univariado),F1-Score,0.574484,0.007504,0.574484,0.007504,0.000000
+Perceptron (lr=0.01, 50 ép.),Acurácia,0.365000,0.072111,0.732000,0.011511,0.367000
+Perceptron (lr=0.01, 50 ép.),Recall,0.893333,0.135708,0.183333,0.031180,-0.710000
+Perceptron (lr=0.01, 50 ép.),Especificidade,0.138571,0.159607,0.967143,0.017928,0.828571
+Perceptron (lr=0.01, 50 ép.),Precisão,0.309081,0.012574,0.721186,0.116946,0.412104
+Perceptron (lr=0.01, 50 ép.),F1-Score,0.456668,0.013644,0.289953,0.039773,-0.166715
