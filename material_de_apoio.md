@@ -113,12 +113,12 @@ Divisão sugerida: André (slides 1 a 6), Julia (7 a 10), João Victor (11 a 16)
 - Regressão linear: idêntico (0,289).
 
 ### Slide 20 — Análise crítica do Z-score
-- Contribuiu para kNN, Perceptron e MLP (+8 a +37 pontos de acurácia; +0,20 a +0,31 de R²).
+- Contribuiu para kNN, Perceptron e MLP (+8 a +37 pontos de acurácia; +0,18 a +0,31 de R²).
 - Neutro para Bayes e regressão linear.
 - Não resolve o Perceptron (F1 máximo 0,54). O valor do crédito é assimétrico (assimetria 1,95; 25 pontos com |z| > 3): log ou escalonamento robusto são alternativas que não testamos.
 
 ### Slide 21 — Tempo de execução
-- kNN: treino instantâneo, teste caro (0,26 s no vinho), porque compara cada amostra com todo o treino.
+- kNN: treino instantâneo, teste caro (0,28 s no vinho), porque compara cada amostra com todo o treino.
 - Bayes e regressão linear: teste quase gratuito.
 - Perceptron treina em cerca de 0,03 s; MLP em cerca de 1 s e testa em menos de 1 ms.
 
@@ -233,7 +233,7 @@ Divisão sugerida: André (slides 1 a 6), Julia (7 a 10), João Victor (11 a 16)
     Depende do critério. Crédito: Bayes se o erro caro é aprovar mau pagador; kNN se a acurácia bruta importa. Vinho: MLP 64-32 Tanh ou kNN, empatados.
 
 29. **Como o custo computacional entra na decisão?**
-    kNN não treina, mas testa em 0,26 s no vinho. O MLP leva cerca de 1 s para treinar e menos de 1 ms para testar. Se o treino for raro e a predição frequente, o MLP é mais barato; se o contrário, o kNN.
+    kNN não treina, mas testa em 0,28 s no vinho. O MLP leva cerca de 1 s para treinar e menos de 1 ms para testar. Se o treino for raro e a predição frequente, o MLP é mais barato; se o contrário, o kNN.
 
 30. **Como vocês mediram a generalização?**
     Pelo gap entre R² de treino e de teste. Gap grande significa overfitting (a 128-64-32 tem 0,41).
